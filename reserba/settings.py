@@ -14,7 +14,12 @@ SECRET_KEY = '84o^8fi&z$%jk+8y9_!f_c@dpc@m14k8%#wukw77r-mi*afj*_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = os.getenv('reserba-backend.onrender.com','ALLOWED_HOSTS', 'localhost 127.0.0.1').split()
+ALLOWED_HOSTS = [
+    "reserba-backend.onrender.com",          # ✅ your backend Render domain
+    "reserba-beryl.vercel.app",              # ✅ your frontend Vercel domain
+    "localhost",                             # optional for local testing
+    "127.0.0.1"
+]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # dev
