@@ -18,7 +18,7 @@ ALLOWED_HOSTS = os.getenv('reserba-backend.onrender.com','ALLOWED_HOSTS', 'local
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # dev
-    "https://your-frontend.vercel.app",  # ✅ production frontend
+    "https://reserba-beryl.vercel.app",  # ✅ production frontend
 ]
 
 
